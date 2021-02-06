@@ -1,0 +1,10 @@
+
+.bg-dark {
+    background-color: black;
+    color: azure;
+}
+
+.bg-light{
+    background-color: azure;
+    color: black;
+}

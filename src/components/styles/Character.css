@@ -1,0 +1,97 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0px;
+}
+
+li {
+    padding: 5px 50px;
+    margin:0px;
+    border: none;
+}
+
+body {
+  background-color:#f2f2f2;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5 {
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+
+.center {
+  height:350px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card {
+  cursor: pointer;
+  color: azure;
+  height:18em;
+  width:16em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  1px 1px 27px #892cdc, -1px -1px 27px #ffffff;
+}
+
+/* Top Half of card, image. */
+
+.property-card img {
+  height:100%;
+  width:100%;
+  
+}
+
+/* Bottom Card Section */
+
+.property-description {
+  background-color:#52057b ;
+  height:3.5em;
+  width:16em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description {
+  height:0em;
+  padding:0px 1em;
+}
+
